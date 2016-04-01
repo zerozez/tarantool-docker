@@ -22,6 +22,7 @@ Now you can use it from inside your apps (using connectors) or just run tarantoo
 
 # What is Tarantool
 >   Tarantool is a Lua application server integrated with a database management system
+
 [tarantool.org](http://tarantool.org/)
 
 # License
