@@ -11,9 +11,9 @@ To test a latest version of Tarantool with a size of container ~15Mb. Allows to 
 
 # How to use it
 
-Get latest image and run it:
+Get latest image and run:
 
-    docker run -p 3301:3301 --name tarantool-1 zerozez/tarantool-docker
+    docker run -p 3301:3301 --name tarantool-1 zerozez/tarantool-docker:latest
 
 Now you can use it from inside your apps (using connectors) or just run tarantool client:
 
