@@ -1,4 +1,5 @@
 FROM alpine:3.1
+MAINTAINER Petr Orlov <zfmeze@gmail.com>
 
 RUN    apk add --update libstdc++ readline libgomp binutils-libs libpq \
     && apk add --update  --virtual .tarantool-deps \
