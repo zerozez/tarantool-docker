@@ -33,7 +33,7 @@ User with full access (default: root)
 
 Password for user (defalut: password)
 
-Currently you can't connect without password with login names different from existed 
+Currently you can't connect without password with login names different from existing
 (guest, admin).
 
 
