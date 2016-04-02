@@ -11,10 +11,13 @@ RUN    apk add --update libstdc++ readline libgomp binutils-libs libpq \
     && cmake -DCMAKE_BUILD_TYPE=Release . && make && make install \
     && apk del .tarantool-deps \
     && rm /var/cache/apk/* \
-    && rm -rf /tarantool*
+    && rm -rf /tarantool* \
+    && mkdir /data
 
 
 EXPOSE 3301
+
+VOLUME ["/data"]
 
 COPY ["./run.sh", "/run.sh"]
 
