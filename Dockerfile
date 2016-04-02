@@ -1,6 +1,6 @@
 FROM alpine:3.1
 
-RUN    apk add --update libstdc++ readline libgomp binutils-libs \
+RUN    apk add --update libstdc++ readline libgomp binutils-libs libpq \
     && apk add --update  --virtual .tarantool-deps \
             git cmake g++ make readline-dev perl postgresql-dev \
     && git clone https://github.com/tarantool/tarantool.git /tarantool \
