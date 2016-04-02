@@ -16,6 +16,10 @@ RUN    apk add --update libstdc++ readline libgomp binutils-libs libpq \
     && mkdir /data
 
 
+ENV TRT_PORT 3301
+ENV TRT_USER root
+ENV TRT_PASS password
+
 EXPOSE 3301
 
 VOLUME ["/data"]

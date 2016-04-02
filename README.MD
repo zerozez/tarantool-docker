@@ -19,6 +19,23 @@ Now you can use it from inside your apps (using connectors) or just run tarantoo
 
     docker exec -it tarantool-1 tarantool
 
+## Environment Variables
+
+### TRT_PORT
+
+Server port to listen (defalut: 3301)
+
+### TRT_USER
+
+User with full access (default: root)
+
+### TRT_PASS
+
+Password for user (defalut: password)
+
+Currently you can't connect without password with login names different from existed 
+(guest, admin).
+
 
 # What is Tarantool
 >   Tarantool is a Lua application server integrated with a database management system
