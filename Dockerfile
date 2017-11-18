@@ -1,7 +1,8 @@
 FROM alpine:3.1
 MAINTAINER Petr Orlov <zfmeze@gmail.com>
 
-RUN    apk add --update libstdc++ readline libgomp binutils-libs libpq \
+RUN    apk add --update libstdc++ readline libgomp \
+                        binutils-libs libpq curl-dev icu-dev \
     && apk add --update  --virtual .tarantool-deps \
             git cmake g++ make readline-dev perl postgresql-dev \
     && git clone https://github.com/tarantool/tarantool.git /tarantool \
